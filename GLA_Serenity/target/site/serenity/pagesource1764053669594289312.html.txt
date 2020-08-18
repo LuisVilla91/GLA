@@ -1,0 +1,232 @@
+<html ng-app="GLA" lang="es-CO" class="k-webkit k-webkit84 js  ng-scope"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-datepicker-popup.dropdown-menu{display:block;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>GLA - Gestión Lavado de Activos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <base href="/">
+
+    <link id="lFavIcon" rel="shortcut icon" href="Content/images/favicon.ico" type="image/x-icon">
+
+    <link href="/Content/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <link href="/Content/kendo/2016.1.412/kendo.common-bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/kendo/2016.1.412/kendo.mobile.all.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/kendo/2016.1.412/kendo.dataviz.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/kendo/2016.1.412/kendo.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/kendo/2016.1.412/kendo.dataviz.bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link href="/Content/bootstrapgla.css" rel="stylesheet" type="text/css">
+    <link href="/Content/kendogla.css" rel="stylesheet" type="text/css">
+    <link href="/Content/estilosgla.css" rel="stylesheet" type="text/css">
+    <link href="/Content/material-elevation.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/Scripts/kendo/2016.1.412/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/RX/rx.all.js"></script>
+
+    <script type="text/javascript" src="/Scripts/angular.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-component.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-rx.js"></script>    
+    <script type="text/javascript" src="/Scripts/i18n/angular-locale_es-CO.js"></script>
+
+    <script type="text/javascript" src="/Scripts/angular-route.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-resource.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-sanitize.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-animate.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-translate.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-translate-loader-partial.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-local-storage.js"></script>
+
+    <script type="text/javascript" src="/Scripts/kendo/2016.1.412/jszip.min.js"></script>
+    <script type="text/javascript" src="/Scripts/kendo/2016.1.412/kendo.all.min.js"></script>
+    <script type="text/javascript" src="/Scripts/kendo/2016.1.412/cultures/kendo.culture.es-CO.min.js"></script>
+    <script type="text/javascript" src="/Scripts/kendo/2016.1.412/messages/kendo.messages.es-CO.min.js"></script>
+    <script type="text/javascript" src="/Scripts/kendo.modernizr.custom.js"></script>
+
+    <script type="text/javascript" src="/Scripts/angular-kendo-window.js"></script>
+
+    <script type="text/javascript" src="/app/validations/glaValidation.js"></script>
+    <script type="text/javascript" src="/app/validations/mensajesValidacionService.js"></script>
+    <script type="text/javascript" src="/app/validations/glaValidationsContainer.js"></script>
+    <script type="text/javascript" src="/app/validations/glaValidationBubble.js"></script>
+    <script type="text/javascript" src="/app/validations/glaValidationSummary.js"></script>
+
+    <script type="text/javascript" src="/app/generales.js"></script>
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/values-consts.js"></script>
+    <script type="text/javascript" src="/app/filters.js"></script>
+    <script type="text/javascript" src="/app/shared/services/data-service.js"></script>
+    <script type="text/javascript" src="/app/controllers.js"></script>
+    <script type="text/javascript" src="/app/validations/errorHandler.js"></script>
+    <script type="text/javascript" src="/app/utilidades/dialogos/dialogos.js"></script>
+    <script type="text/javascript" src="/app/utilidades/loadingPanel/loadingPanel.js"></script>
+    <script type="text/javascript" src="/app/components/seleccionUsuarioComponent.js"></script>
+
+    <script type="text/javascript" src="/app/alertas/services.js"></script>
+    <script type="text/javascript" src="/app/alertas/tiposAlertasControllers.js"></script>
+    <script type="text/javascript" src="/app/alertas/gestionAlertasControllers.js"></script>
+    <script type="text/javascript" src="/app/alertas/indicadoresAlertasControllers.js"></script>
+
+    <script type="text/javascript" src="/app/monitoreo/services.js"></script>
+    <script type="text/javascript" src="/app/monitoreo/gruposPrimariosControllers.js"></script>
+    <script type="text/javascript" src="/app/monitoreo/indicadoresTransaccionalesControllers.js"></script>
+
+    <script type="text/javascript" src="/app/segmentacion/services.js"></script>
+    <script type="text/javascript" src="/app/segmentacion/segmentacionControllers.js"></script>
+    <script type="text/javascript" src="/app/segmentacion/reporteSegmentacionControllers.js"></script>
+    <script type="text/javascript" src="/app/segmentacion/clientesSegmentadosControllers.js"></script>
+
+    <script type="text/javascript" src="/app/administracion/services.js"></script>
+    <script type="text/javascript" src="/app/administracion/parametrosControllers.js"></script>
+    <script type="text/javascript" src="/app/administracion/tiposControllers.js"></script>
+    <script type="text/javascript" src="/app/administracion/logAccionesControllers.js"></script>
+    <script type="text/javascript" src="/app/administracion/procesoAutomaticoControllers.js"></script>
+    <script type="text/javascript" src="/app/administracion/camposEntidadesControllers.js"></script>
+
+    <script type="text/javascript" src="/app/carguemasivo/services.js"></script>
+    <script type="text/javascript" src="/app/carguemasivo/parametrizacionCamposControllers.js"></script>
+    <script type="text/javascript" src="/app/carguemasivo/cargueInicialControllers.js"></script>
+
+    <script type="text/javascript" src="/app/seguridad/services.js"></script>
+    <script type="text/javascript" src="/app/seguridad/autenticacionControllers.js"></script>
+    <script type="text/javascript" src="/app/seguridad/usuariosControllers.js"></script>
+    <script type="text/javascript" src="/app/seguridad/rolesControllers.js"></script>
+
+    <script type="text/javascript" src="/app/scoring/services.js"></script>
+    <script type="text/javascript" src="/app/scoring/factoresRiesgoControllers.js"></script>
+    <script type="text/javascript" src="/app/scoring/nivelesRiesgoControllers.js"></script>
+
+</head>
+
+<body ng-controller="mainController" class="ng-scope">
+    <script type="text/javascript">
+        // Actualiza la cultura basado en lo que se puso en la propiedad lang del tag html
+        var currentCulture = $("html").prop("lang");
+        if (currentCulture)
+        {
+            kendo.culture(currentCulture);
+        }
+    </script>
+    <nav id="header" class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="/Content/images/logo_cero_gla.png" alt="CERO"></a>
+            </div>
+            <div class="navbar-collapse collapse" ng-class="{collapse : isCollapsed}">
+                <ul class="nav navbar-nav" ng-show="datosAutenticacion.autenticado">
+                    <li uib-dropdown="" id="menuMonitoreo" ng-show="menu.monitoreo.tienePermiso" class="dropdown">
+                        <a uib-dropdown-toggle="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Monitoreo <span class="caret"></span></a>
+                        <ul uib-dropdown-menu="" role="menu" aria-labelledby="menuAdministracion" class="dropdown-menu">
+                            <li role="menuitem" ng-show="menu.gruposprimarios.tienePermiso" class=""><a href="#/gruposprimarios">Grupos primarios transaccionales</a></li>
+                            <li role="menuitem" ng-show="menu.indicadorestransaccionales.tienePermiso" class=""><a href="#/indicadorestransaccionales">Indicadores transaccionales</a></li>
+                        </ul>
+                    </li>
+                    <li uib-dropdown="" id="menuAlertas" ng-show="menu.alertas.tienePermiso" class="dropdown">
+                        <a uib-dropdown-toggle="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Alertas <span class="caret"></span></a>
+                        <ul uib-dropdown-menu="" role="menu" aria-labelledby="menuAdministracion" class="dropdown-menu">
+                            <li role="menuitem" ng-show="menu.gestionalertaspendientes.tienePermiso" class=""><a href="#/gestionalertaspendientes">Mis alertas pendientes</a></li>
+                            <li role="menuitem" ng-show="menu.tiposalertas.tienePermiso" class=""><a href="#/tiposalertas">Configuración de tipos de alertas</a></li>
+                            <li role="menuitem" ng-show="menu.gestionalertas.tienePermiso" class=""><a href="#/gestionalertas">Gestión alertas</a></li>
+                            <li role="menuitem" ng-show="menu.indicadoresalertas.tienePermiso" class=""><a href="#/indicadoresalertas">Indicadores alertas</a></li>
+                        </ul>
+                    </li>
+                    <li uib-dropdown="" id="menuSegmentacion" ng-show="menu.segmentacion.tienePermiso" class="dropdown">
+                        <a uib-dropdown-toggle="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Segmentación <span class="caret"></span></a>
+                        <ul uib-dropdown-menu="" role="menu" aria-labelledby="menuAdministracion" class="dropdown-menu">
+                            <li role="menuitem" ng-show="menu.variablesSegmentacion.tienePermiso" class=""><a href="#/segmentacion">Variables de segmentación</a></li>
+                            <li role="menuitem" ng-show="menu.reportesegmentacion.tienePermiso" class=""><a href="#/reportesegmentacion">Reportes segmentación</a></li>
+                            <li role="menuitem" ng-show="menu.clientessegmentados.tienePermiso" class=""><a href="#/clientessegmentados">Clientes segmentados</a></li>
+                        </ul>
+                    </li>
+                    <li uib-dropdown="" id="menuScoring" ng-show="menu.scoring.tienePermiso" class="dropdown">
+                        <a uib-dropdown-toggle="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Scoring <span class="caret"></span></a>
+                        <ul uib-dropdown-menu="" role="menu" aria-labelledby="menuScoring" class="dropdown-menu">
+                            <li role="menuitem" ng-show="menu.factoresRiesgo.tienePermiso" class=""><a href="#/factoresriesgo">Factores de riesgo</a></li>
+                            <li role="menuitem" ng-show="menu.nivelesriesgo.tienePermiso" class=""><a href="#/nivelesriesgo">Niveles de riesgo</a></li>
+                        </ul>
+                    </li>
+                    <li uib-dropdown="" id="menuAdministracion" ng-show="menu.administracion.tienePermiso" class="dropdown">
+                        <a uib-dropdown-toggle="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Administración <span class="caret"></span></a>
+                        <ul uib-dropdown-menu="" role="menu" aria-labelledby="menuAdministracion" class="dropdown-menu">
+                            <li role="menuitem" ng-show="menu.cargueinicial.tienePermiso" class=""><a href="#/cargueinicial">Cargue inicial</a></li>
+                            <li role="menuitem" ng-show="menu.procesoautomatico.tienePermiso" class=""><a href="#/procesoautomatico">Proceso automático</a></li>
+                            <li role="menuitem" ng-show="menu.parametrizacioncampos.tienePermiso" class=""><a href="#/parametrizacioncampos">Variables migración</a></li>
+                            <li role="menuitem" ng-show="menu.parametros.tienePermiso" class=""><a href="#/parametros">Parametros</a></li>
+                            <li role="menuitem" ng-show="menu.tipos.tienePermiso" class=""><a href="#/tipos">Tipos</a></li>
+                            <li role="menuitem" ng-show="menu.logacciones.tienePermiso" class=""><a href="#/camposentidades">Campos</a></li>
+                            <li role="menuitem" ng-show="menu.usuarios.tienePermiso" class=""><a href="#/usuarios">Usuarios</a></li>
+                            <li role="menuitem" ng-show="menu.roles.tienePermiso" class=""><a href="#/roles">Roles</a></li>
+                            <li role="menuitem" ng-show="menu.logacciones.tienePermiso" class=""><a href="#/logacciones">Log Acciones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li uib-dropdown="" id="menuSesionIniciada" ng-show="datosAutenticacion.autenticado" class="dropdown">
+                        <a uib-dropdown-toggle="" class="ng-binding dropdown-toggle" aria-haspopup="true" aria-expanded="false">Bienvenido(a) : admin <span class="caret"></span></a>
+                        <ul uib-dropdown-menu="" role="menu" aria-labelledby="menuSesion" class="dropdown-menu">
+                            <li role="menuitem"><a href="#/cambiarpassword">Cambiar contraseña</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li role="menuitem"><a ng-click="cerrarSesion()">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                    <li id="menuSesionSinIniciar" ng-hide="datosAutenticacion.autenticado || rutaActual == '/login'" class="ng-hide">
+                        <a href="#/login">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper" class="container-fluid">
+        <div class="row">
+    
+    <div class="col-md-12 jumbotron" style="padding-top:20px;" gla-validations-container="">
+        <div class="row">
+            <div class="col-xs-12" gla-validation-summary=""><div class="alert alert-danger ng-hide" ng-show="(mensajesValidacion.length > 0 || errorHandler.errors.length > 0) &amp;&amp; rutaActual !== &quot;/login&quot;">
+    <button type="button" class="close" ng-click="limpiarMensajes()">×</button>
+    <ul>
+        <!-- ngRepeat: item in mensajesValidacion -->
+        <!-- ngRepeat: item in errorHandler.errors -->
+    </ul>
+</div></div>
+        </div>
+        <!-- ngView:  --><div ng-view="" class="ng-scope"><div class="row ng-scope">
+    <div class="col-xs-12">
+        <div class="tituloPagina">
+            <div class="tituloPaginaTexto ng-scope" translate="ALERTAS.ALERTAS_PENDIENTES.TITULO_ALERTAS_PENDIENTES">Mis alertas pendientes</div>
+        </div>
+    </div>
+</div>
+<gla-loading-panel class="ng-scope"><div class="row ng-hide" ng-show="loader.isLoadingPartial()">
+    <div class="col-xs-12" style="text-align:center;">
+        <img src="Content/images/ajax-loader.gif">
+    </div>        
+</div></gla-loading-panel>
+<div kendo-grid="gridDatosAlertasPendientes" k-options="gridDatosAlertasPendientes" ng-show="loader.isReadyPartial()" class="ng-scope k-grid k-widget" data-role="grid" style="">
+<div class="k-grid-header" style="padding-right: 0px;"><div class="k-grid-header-wrap k-auto-scrollable"><table role="grid"><colgroup><col style="width:25px"><col style="width:100px"><col style="width:250px"><col style="width:100px"><col style="width:200px"><col style="width:200px"><col style="width:140px"><col style="width:160px"><col style="width:100px"><col style="width:140px"><col style="width:160px"><col style="width:350px"></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader" rowspan="1" data-index="0" id="2c20d454-4cb7-4b51-a747-fc7e46965151" class="k-header ng-scope"></th><th scope="col" role="columnheader" data-field="id" rowspan="1" data-title="Código alerta" data-index="1" id="ccb1f86b-7b61-477a-9b63-5135257484cc" class="k-header ng-scope">Código alerta</th><th scope="col" role="columnheader" data-field="nombreAlerta" rowspan="1" data-title="Nombre alerta" data-index="2" id="c248dede-163a-422a-a406-b727d0bf259d" class="k-header ng-scope">Nombre alerta</th><th scope="col" role="columnheader" data-field="estadoAlerta.valor" rowspan="1" data-title="Estado alerta" data-index="3" id="44f3e5de-2c73-4065-9fbd-80b9dd1a2e64" class="k-header ng-scope">Estado alerta</th><th scope="col" role="columnheader" data-field="faseEvaluacionActual" rowspan="1" data-title="Fase alerta" data-index="4" id="32301a15-c16e-402e-826b-60b1d83fafc0" class="k-header ng-scope">Fase alerta</th><th scope="col" role="columnheader" data-field="calificacion.valor" rowspan="1" data-title="Calificación de la alerta" data-index="5" id="76425516-8ad6-49ba-abfd-8cf2475d4cb9" class="k-header ng-scope">Calificación de la alerta</th><th scope="col" role="columnheader" data-field="origenAlerta.valor" rowspan="1" data-title="Origen alerta" data-index="6" id="2076d020-bf5b-4061-80fd-59840bbcc9ee" class="k-header ng-scope">Origen alerta</th><th scope="col" role="columnheader" data-field="fechaConFormato" rowspan="1" data-title="Fecha generación" data-index="7" id="4f044967-baee-40f3-b3f0-53054b057d40" class="k-header ng-scope">Fecha generación</th><th scope="col" role="columnheader" data-field="tipoPersona" rowspan="1" data-title="Tipo Persona" data-index="8" id="6b88854a-a344-494f-8c78-4bbca1e4585b" class="k-header ng-scope">Tipo Persona</th><th scope="col" role="columnheader" data-field="tipoIdentificacion" rowspan="1" data-title="Tipo identificación" data-index="9" id="6f34e4b1-b20f-4ea4-a46c-299f2a48abcd" class="k-header ng-scope">Tipo identificación</th><th scope="col" role="columnheader" data-field="numeroIdentificacion" rowspan="1" data-title="Número identificación" data-index="10" id="53c836b2-fc80-45a6-b4c0-de8d8dddb08c" class="k-header ng-scope">Número identificación</th><th scope="col" role="columnheader" data-field="nombreCliente" rowspan="1" data-title="Nombre cliente" data-index="11" id="61d05e23-1b9f-4529-a4b9-308bacacf7ff" class="k-header ng-scope">Nombre cliente</th></tr></thead></table></div></div><div class="k-grid-content k-auto-scrollable"><table role="grid"><colgroup><col style="width:25px"><col style="width:100px"><col style="width:250px"><col style="width:100px"><col style="width:200px"><col style="width:200px"><col style="width:140px"><col style="width:160px"><col style="width:100px"><col style="width:140px"><col style="width:160px"><col style="width:350px"></colgroup><tbody role="rowgroup"></tbody></table></div><div class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager"><a href="#" title="Ir a la primera página" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-w">Ir a la primera página</span></a><a href="#" title="Ir a la página anterior" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w">Ir a la página anterior</span></a><ul class="k-pager-numbers k-reset"><li class="k-current-page"><span class="k-link k-pager-nav">0</span></li><li><span class="k-state-selected">0</span></li></ul><a href="#" title="Ir a la página siguiente" class="k-link k-pager-nav  k-state-disabled" data-page="0" tabindex="-1"><span class="k-icon k-i-arrow-e">Ir a la página siguiente</span></a><a href="#" title="Ir a la última página" class="k-link k-pager-nav k-pager-last k-state-disabled" data-page="0" tabindex="-1"><span class="k-icon k-i-seek-e">Ir a la última página</span></a><span class="k-pager-info k-label">No hay registros.</span></div></div>
+<script id="columnaoperaciones-template" type="text/x-kendo-template" class="ng-scope">
+    <div class="columnaOperaciones">
+        <a href="\\#/gestionalertas/edit/#: id #"><span class="glyphicon glyphicon-pencil"></span></a>
+    </div>
+</script>
+<div class="row ng-scope">
+    <div class="col-xs-12 areaBotones">
+        <button class="btn btnAccionTexto" ng-click="exportarReporteAlertasPendientes()" type="button"><span translate="BOTONES.EXPORTAR_REPORTE" class="ng-scope">Exportar reporte</span></button>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+    </div>
+    <div id="footer" class="container">
+        <img class="logoPragmaFooter" src="/Content/images/log_cero_gla_pata.png">
+        &nbsp;Gestión Lavado de Activos <br><label class="ng-binding">La versión de la base de datos no coincide con la de la aplicación.</label>&nbsp;© 2020
+        Pragma Cero S.A.S. Todos los derechos reservados.
+    </div>
+    <div class="areaCargando ng-hide" ng-show="loader.isLoadingComplete()"></div>
+
+
+</body></html>

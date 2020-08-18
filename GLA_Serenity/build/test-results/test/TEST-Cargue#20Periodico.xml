@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cargue Periodico" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-18T18:15:23" hostname="MacBook-Pro-de-administrador.local" time="3.745">
+  <properties/>
+  <testcase name="Ejecutar la carga de información por medio del proceso automatico" classname="Cargue Periodico" time="3.745"/>
+  <system-out><![CDATA[30
+Cargue periódico
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given El administrador entra la seccion proceso automatico
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Admin opens the http://pragmacero01:8017/#/procesoautomatico
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Admin opens the http://pragmacero01:8017/#/procesoautomatico
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When Ejecuta el proceso automatico
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Admin proceso automatico task
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Admin clicks on El usuario presiona el botón ejecutar
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Admin clicks on El usuario presiona Aceptar
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then Debe ver la información cargada
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Admin opens the http://pragmacero01:8017/#/logacciones
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then cargue periodico question should be (true)
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Ejecutar la carga de información por medio del proceso automatico
+----------------------------------------------------------------------------?[0m
+]]></system-err>
+</testsuite>

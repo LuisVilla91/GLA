@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Proceso automatico" skipped="0" tests="1" time="81.17" timestamp="2020-08-14 09:14:21"><testcase name="Ejecutar la carga de información por medio del proceso automatico"><error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=84.0.4147.125)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBook-Pro-de-administrador.local', ip: '192.168.1.25', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/m6/qmg5v16n5z9...}, goog:chromeOptions: {debuggerAddress: localhost:52517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 6836245dd80c50672d013fa6f6cf0859&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;wrapper&quot;]/div/div/div[2]/div[3]/div[3]/div/a[1]}" type="org.openqa.selenium.NoSuchWindowException">no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-administrador.local', ip: '192.168.1.25', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/m6/qmg5v16n5z9...}, goog:chromeOptions: {debuggerAddress: localhost:52517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6836245dd80c50672d013fa6f6cf0859
+*** Element info: {Using=xpath, value=//*[@id="wrapper"]/div/div/div[2]/div[3]/div[3]/div/a[1]}</error><system-err>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-administrador.local', ip: '192.168.1.25', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/m6/qmg5v16n5z9...}, goog:chromeOptions: {debuggerAddress: localhost:52517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6836245dd80c50672d013fa6f6cf0859
+*** Element info: {Using=xpath, value=//*[@id="wrapper"]/div/div/div[2]/div[3]/div[3]/div/a[1]}
+tasks.ProcesoAutomaticoTask.performAs(ProcesoAutomaticoTask.java:14)
+stepDefinition.procesoAutomatico.ProcesoAutomaticoSteps.ejecuta_el_proceso_automatico(ProcesoAutomaticoSteps.java:38)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+</system-err></testcase></testsuite>
