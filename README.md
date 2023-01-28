@@ -1,9 +1,9 @@
 
-# Test automation project using Serenity BDD with Cucumber and Screenplay pattern
+# Automation project using Serenity BDD with Cucumber and Screenplay pattern
 
 ## Serenity BDD
-Serenity BDD is a Java library designed to make automated acceptance tests, it has potent and high detailed reporting and documentation features.
-ALso has Selenium and Rest Assured for API testing support
+Serenity BDD is a Java library designed to make automated acceptance tests, it has potent and highly detailed reporting and documentation features.
+Also has Selenium and Rest Assured for API testing support
 
 ## Cucumber
 Cucumber is a tool that supports behavior-driven development. Use a language called Gherkin.
@@ -12,7 +12,8 @@ business rules
 
 ## Screenplay pattern
 
-Screenplay is a desgin pattern that applies the SOLID principles that encourage to write high quiality, mantainable, and scalabe code.
+The Screenplay pattern describes tests in terms of actors and the tasks they perform
+The screenplay is a design pattern that applies the SOLID principles that encourage the writing of high-quality, maintainable, and scalable code.
 
 The SOLID principles applied in this project are:
 
@@ -22,10 +23,11 @@ A class should have only one responsibility and therefore only one reason to cha
 
 ### Open-Closed Principle (OCP)
 
-A class should be open for extension but closed for modification, the meaning is possible to extend behavior by writing a new class without changing the working code.
+A class should be open for extension but closed for modification, which means is possible to extend behavior by writing a new class without changing the working code.
 
-There is an important consideration, the class which hold the element locatars are likely get modification by updatading the locator or when adding a new locator,
-therefore this princicple is compromise. However as defined by the principle this class is extended when other class need to use the elements to perform actions to them.
+There is an important consideration, the class which holds the element locators are likely to get modification by updating the locator or when adding a new locator,
+therefore this principle is compromised. However, as defined by the principle this class is extended when other classes need to use the elements to perform actions to them.
+
 
 
 
